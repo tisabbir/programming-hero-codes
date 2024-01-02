@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+}
+#external {
+    background-color: burlywood;
+}
+h1{
+    color: blueviolet;
+    text-align: center;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    /* display: none; */
+}
+li {
+    background-color: bisque;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    text-align: right;
+    visibility: hidden;
+}
+#third {
+    color: blue;
+}
+.first {
+    text-decoration: underline;
+}
+#one {
+    background-color: bisque;
+    margin: 5px;
+    padding: 5px;
+    display : inline-block;
+}
+p {
+    margin: 5px;
+}
+#two {
+    background-image: url('/images/mogdhora.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#three {
+    background-image: url('/images/mogdhora.png');
+    background-repeat: repeat-x;
+    background-size: 100px;
+}
+
+.a{
+    background-color: yellow;
+    border-radius: 15px;
+}
+.p{
+    border: 5px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px blue;
+    display : inline-block;
+}
+span {
+    display: block;
+}
