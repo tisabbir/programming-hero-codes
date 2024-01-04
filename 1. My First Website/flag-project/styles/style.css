@@ -6,3 +6,19 @@
     height: 100vh;
     background-color: bisque;
 }
+
+.flag-container {
+    height: 300px;
+    width: 500px;
+    background-color: green;
+    position: relative;
+}
+.flag-circle {
+    height: 130px;
+    width: 130px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
