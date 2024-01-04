@@ -3,7 +3,7 @@
     padding: 0;
 }
 .main-container {
-    height: 100vh;
+    height: 200vh;
     background-color: bisque;
 }
 
@@ -11,6 +11,9 @@
     height: 300px;
     width: 500px;
     background-color: green;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     position: relative;
 }
 .flag-circle {
@@ -21,4 +24,22 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    border-radius: 100%;
+}
+.flag-handle {
+    height: 250px;
+    width: 30px;
+    background-color: black;
+    position: relative;
+    top: 90%;
+    border-top-right-radius: 30px;
+}
+.flag-footer{
+    height: 50px;
+    width: 80px;
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    transform: translate(50%);
 }
