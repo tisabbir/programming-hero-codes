@@ -25,15 +25,31 @@
         }
         #img1 img {
             max-width: 300px;
+            position: absolute;
+            top: 130px;
+            left: 50px;
         }
         img {
-            border: 2px dashed black;
+            /* border: 2px dashed black; */
         }
 
         .container {
-            border: 2px dashed red;
+            /* border: 2px dashed red; */
             position: relative;
             height: 500px;
+        }
+        .dummay-container {
+            position: relative;
+        }
+        .dummay {
+            height: 200px;
+            border: 2px dashed black;
+        }
+        #one {
+            /* position: fixed; */
+            position: fixed;
+            top: 0px;
+            border: none;
         }
     </style>
 
@@ -45,6 +61,21 @@
             " alt="cloud"></div>
         <div id="img2" class="image-div"><img src="images/tree-removebg-preview.png" alt="tree"></div>
         <div id="img3" class="image-div"><img src="images/ground-removebg-preview.png" alt="ground"></div>
+    </div>
+
+    <div  class="dummay-container">
+        <div id="one" class="dummay">
+            <h2>This Scene is created using CSS Position</h2>
+        </div>
+        <div class="dummay"></div>
+        <div class="dummay"></div>
+        <div class="dummay"></div>
+        <div class="dummay"></div>
+        <div class="dummay"></div>
+        <div class="dummay"></div>
+        <div class="dummay"></div>
+        <div class="dummay"></div>
+        <div class="dummay"></div>
     </div>
 </body>
 </html>
