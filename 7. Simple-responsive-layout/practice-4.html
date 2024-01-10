@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 4</title>
+
+    <style>
+        img {
+            width: 80%;
+            height: 220px;
+        }
+        .cart {
+            display: flex;
+            border: 1px solid black;
+
+        }
+
+        @media screen and (max-width: 576px) {
+            .cart {
+              flex-direction: column;
+              width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cart">
+            <img src="images/food.jpg" alt="">
+            
+            <div>
+                <h2>Food item 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt perspiciatis perferendis aut, quae optio autem qui necessitatibus consequatur molestias ratione deserunt earum possimus, magni voluptate aperiam quibusdam expedita natus minus!</p>
+            <button>BUY NOW</button>
+            </div>
+            
+        </div>
+        <div class="cart">
+            <img src="images/food.jpg" alt="">
+            <div>
+                <h2>Food item 2</h2>
+            <p>Optio ex quas velit beatae. Tempore, ipsa! Eligendi et nisi eum ducimus, voluptatum dolor animi quae assumenda dolores enim expedita nulla temporibus porro earum distinctio, alias, eaque omnis minima deserunt?</p>
+            <button>BUY NOW</button>
+
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
