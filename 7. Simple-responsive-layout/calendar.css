@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+    color: mediumseagreen;
+}
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    row-gap: 5%;
+    column-gap: 1%;
+    justify-content: space-around;
+    padding: 50px;
+}
+.date , .day {
+    border: 1px solid aquamarine;
+    background-color: rgb(177, 255, 229);
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    border-radius: 10px;
+}
+
+.day {
+    background-color: rgb(83, 244, 191);
+}
