@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice Three</title>
+
+    <style>
+        /* Default styling for the image */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain; /* Ensure the image covers the entire container */
+}
+
+/* Media query for larger screens like desktops and laptops */
+@media only screen and (max-width: 990px) {
+  img {
+    max-width: 110%;
+    object-fit: cover; /* Adjust object-fit for larger screens */
+  }
+}
+
+/* Media query for tablets */
+@media only screen and (max-width: 770px) {
+  img {
+    max-width: 130%;
+    object-fit: cover; /* Adjust object-fit for tablets */
+  }
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 570px) {
+  img {
+    max-width: 150%;
+    object-fit: cover; /* Adjust object-fit for mobile devices */
+  }
+}
+
+    </style>
 </head>
 <body>
-    <img src="images/large-scene.jpg" alt="">
+    <div>
+        <img src="images/large-scene.jpg" alt="">
+    </div>
+    
 </body>
 </html>
