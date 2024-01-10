@@ -9,10 +9,10 @@
 
     grid-template-areas: 
     'item1 item1 item1 item1 item1 item1'
-    'item2 item3 item3 item3 item4 item4' 'item2 item5 item5 item5 item5 item6'
+    'item2 item3 item3 item3 item4 item4' 'item2 item5 item5 item5 item5 item5'
     ;
 }
-.grid-container div{
+.grid-container div , .item6{
     border: 2px solid black;
     text-align: center;
     padding: 10px;
@@ -35,6 +35,11 @@
     grid-area: item5;
 }
 .item6 {
-    grid-area: item6;
     border-radius: 50%;
+    height: auto;
+    width: 50px;
+    position: absolute;
+    top: 180px;
+    right: 20px;
+    background-color: lightpink;
 }
