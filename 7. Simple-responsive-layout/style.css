@@ -1,0 +1,25 @@
+nav a{
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+nav a:hover {
+    background-color: lightgray;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.login-form {
+    /* border: 2px solid slateblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    gap: 10px;
+}
+.login-form * {
+    width: 50%;
+    text-align: center;
+}
