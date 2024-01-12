@@ -18,10 +18,6 @@ img {
 .item1 {
     height: 100%;
 }
-.img {
-    /* border: 5px solid red; */
-
-}
 .image-container {
     display: grid;
     grid-template-columns: repeat(6,1fr);
