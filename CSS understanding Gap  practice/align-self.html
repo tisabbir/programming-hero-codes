@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .flex-container {
+            display: flex;
+            height: 200px;
+        }
+
+        .flex-item {
+            background-color: lightblue;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .aligned-item {
+            align-self: flex-end;
+             /* Align this item to the end of the cross-axis */
+        }
+    </style>
+    <title>align-self Example</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item aligned-item">Item 2 (aligned to flex-end)</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+</body>
+</html>
