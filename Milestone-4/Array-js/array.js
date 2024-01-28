@@ -26,3 +26,34 @@ console.log(singers);
 // singers.unshift('mailam');
 singers[0] = 'mailam';
 console.log(singers);
+
+// includes
+
+console.log(singers.includes('salam'));
+// indexOf
+console.log(singers.indexOf('salam'))
+
+// Array.isArray(arr)
+const team = 'kolom';
+console.log(Array.isArray(singers))
+console.log(Array.isArray(team))
+// join
+
+console.log(singers.join('+'))
+
+//concat
+
+const dancer = ['abul','kabul','babul'];
+
+const dolleeens = singers.concat(dancer);
+
+console.log(dolleeens)
+
+//slice
+
+console.log(dancer.slice(1,3))
+
+//splice 
+
+console.log(dancer.splice(1,3))
+console.log(dancer)
