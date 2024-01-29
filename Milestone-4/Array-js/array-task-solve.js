@@ -21,6 +21,19 @@
 
 // Task 3
 
-const books = ['atomic habits', 'power of habits', 'zero to one', 'dopamine detox' , 'intro to jabascript']
+// const books = ['atomic habits', 'power of habits', 'zero to one', 'dopamine detox' , 'intro to jabascript']
 
-console.log(books.includes('intro to jabascript'));
+// console.log(books.includes('intro to jabascript'));
+
+
+
+// Task 4
+const fol = ['aam', 'jaam']
+const name = 'josh'
+const age = 24;
+const skills = ['html', 'css', 'javascript']
+
+console.log(Array.isArray(fol))
+console.log(Array.isArray(name))
+console.log(Array.isArray(age))
+console.log(Array.isArray(skills))
