@@ -28,12 +28,23 @@
 
 
 // Task 4
-const fol = ['aam', 'jaam']
-const name = 'josh'
-const age = 24;
-const skills = ['html', 'css', 'javascript']
+// const fol = ['aam', 'jaam']
+// const name = 'josh'
+// const age = 24;
+// const skills = ['html', 'css', 'javascript']
 
-console.log(Array.isArray(fol))
-console.log(Array.isArray(name))
-console.log(Array.isArray(age))
-console.log(Array.isArray(skills))
+// console.log(Array.isArray(fol))
+// console.log(Array.isArray(name))
+// console.log(Array.isArray(age))
+// console.log(Array.isArray(skills))
+
+
+
+// task 5
+
+const sectionA = ['karim', 'Rahim', 'Abdullah'];
+console.log(sectionA)
+const sectionB = ['Abdur-Rahman','Ibrahim','Abu Dujana'];
+console.log(sectionB)
+const total = sectionA.concat(sectionB);
+console.log(total)
