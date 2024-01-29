@@ -20,3 +20,7 @@
 
 
 // Task 3
+
+const books = ['atomic habits', 'power of habits', 'zero to one', 'dopamine detox' , 'intro to jabascript']
+
+console.log(books.includes('intro to jabascript'));
