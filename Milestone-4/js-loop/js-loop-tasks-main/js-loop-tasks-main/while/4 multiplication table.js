@@ -4,5 +4,10 @@ As Ersa is learning now, she wants to explore more and more. Tell Ersa to genera
 
  */
 
+let i=1;
+while(i<=10){
+    console.log('5*' + i +' =  '+ 5*i);
+    i++;
+}
 
 /*programming hero*/
