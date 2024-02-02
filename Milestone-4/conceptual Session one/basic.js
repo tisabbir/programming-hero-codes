@@ -1,0 +1,1 @@
+console.log(18, 'helllo world', 29, 'kemon achen')
