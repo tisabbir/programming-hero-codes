@@ -22,10 +22,11 @@ function repeatedNumberCounter(number, arr){
         console.log('the repeated number is : ', thatNumber[0]);
     console.log( "Repeated : " , thatNumber.length)
 
-    }
+    } else{ console.log(thatNumber.length)}
 }
-repeatedNumberCounter(5, [5,6,11,12,98, 5])
-repeatedNumberCounter(25, [5,6,11,12,98, 5, 25, 25, 25])
+// repeatedNumberCounter(5, [5,6,11,12,98, 5])
+// repeatedNumberCounter(25, [5,6,11,12,98, 5, 25, 25, 25])
+// repeatedNumberCounter(6, [5,6,11,12,98, 5, 25, 25, 25])
 // sample-input: numbers = [5,6,11,12,98, 5]
 // find: 5
 
@@ -66,6 +67,22 @@ vowelCounter('Dhaka aeiou')
 // sample-input: I am learning Programming to become a programmer
 
 // sample-output: Programming
+
+
+function longestWordFinder(str){
+    let strToArr = str.split(' ')
+    // console.log(strToArr)
+   let  longestWord = '';
+   for(let i=0; i<strToArr.length; i++){
+    if(longestWord.length<strToArr[i].length){
+        longestWord = strToArr[i];
+    }
+   }
+   console.log(longestWord);
+}
+
+longestWordFinder('I am learning Programming to become a programmer')
+
 
 // Task-5:
 // Generate a random number between 10 to 20.
