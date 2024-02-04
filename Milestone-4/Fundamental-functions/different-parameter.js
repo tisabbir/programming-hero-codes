@@ -32,4 +32,25 @@ function arrayHandler (arr) {
 }
 const arrCounter = arrayHandler([1,3,5,6,7])
 
-console.log(arrCounter)
+// console.log(arrCounter)
+
+// object 
+let person1 = {
+    name : 'akkas',
+    father : 'jakkas'
+}
+let person2 = {
+    name : 'maliha',
+    father : 'kalihar bap'
+}
+
+
+function objHandler(obj){
+    return obj.name;
+}
+
+
+let personName = objHandler(person1);
+console.log(personName)
+personName = objHandler(person2);
+console.log(personName)
