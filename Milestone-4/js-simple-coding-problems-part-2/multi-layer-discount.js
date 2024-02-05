@@ -33,3 +33,8 @@ function discountedPriceCalculator(quantity){
 
 const discountedPrice = discountedPriceCalculator(350);
 console.log('you have to pay',discountedPrice);
+
+console.log(typeof null)
+
+const karim = null;
+console.log(typeof karim)
