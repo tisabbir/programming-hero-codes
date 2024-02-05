@@ -18,4 +18,14 @@ console.log(Tallest, 'is the tallest height')
 
 // Smallest Person finding from the array
 
-
+function verticallyPrivilegedFinder(numArr){
+    let verticallyPrivilegedHeight = numArr[0];
+    for(let num of numArr){
+        if(num<verticallyPrivilegedHeight){
+            verticallyPrivilegedHeight = num;
+        }
+    }
+    return verticallyPrivilegedHeight;
+}
+let verticallyPrivilegedPerson = verticallyPrivilegedFinder(height);
+console.log(verticallyPrivilegedPerson, 'is the most vertically privileged person"s height');
