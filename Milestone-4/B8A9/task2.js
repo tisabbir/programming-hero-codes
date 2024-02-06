@@ -1,8 +1,8 @@
 function matchFinder(string1, string2){
     // Validation 
-    if(typeof string1 !== 'string' || typeof string2 == 'string'){
+    if(typeof string1 !== 'string' || typeof string2 !== 'string'){
         let errorMsg = 'Please provide two string';
-
+        return errorMsg;
     }
 
 
@@ -26,8 +26,8 @@ console.log(matchFind)
 matchFind = matchFinder('Peter Parker', 'pet');
 console.log(matchFind)
 
-// matchFind = matchFinder(45, 'pet');
-// console.log(matchFind)
+matchFind = matchFinder(45, 'pet');
+console.log(matchFind)
 
-// matchFind = matchFinder('Peter Parker', 15);
-// console.log(matchFind)
+matchFind = matchFinder('Peter Parker', 15);
+console.log(matchFind)
