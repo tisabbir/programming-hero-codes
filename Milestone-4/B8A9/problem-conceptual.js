@@ -1,4 +1,16 @@
 function picnicBudget(participantQuantity){
+    // Validation Section starts
+    if(typeof participantQuantity !== 'number'){
+        return 'Please provide a valid number'
+    } else if(participantQuantity<=0){
+        return 'Please provide a positive value , More than 0'
+    }
+
+    // Validation Section ends
+
+
+
+    // Budget section    
     let picnicCostFirst100 = 5000;
     let picnicCostSecond100 = 4000;
     let picnicCostMoreThan200 = 3000;
@@ -22,5 +34,5 @@ function picnicBudget(participantQuantity){
     }
 }
 
-const budgetPlanner = picnicBudget(300);
+const budgetPlanner = picnicBudget(1);
 console.log(budgetPlanner);
