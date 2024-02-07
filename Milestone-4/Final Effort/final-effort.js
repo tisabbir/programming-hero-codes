@@ -51,9 +51,39 @@ function checkName(name) {
 
     }
 
-    console.log(checkName('Salman'));
-    console.log(checkName('RAFEE'));
-    console.log(checkName('Jhankar'));
-    console.log(checkName(199));
-    console.log(checkName(["Rashed"]));
+    // console.log(checkName('Salman'));
+    // console.log(checkName('RAFEE'));
+    // console.log(checkName('Jhankar'));
+    // console.log(checkName(199));
+    // console.log(checkName(["Rashed"]));
+
+
+    // Problem Three
+    function deleteInvalids(array) {
+        let numArray = [];
+        // validation 
+        if(!Array.isArray(array)){
+            return "Invalid Array. Please provide a valid array"
+        } 
+        
+        else{
+            for(let element of array){
+                if(typeof element === 'number'){
+                    if(!isNaN(element)){
+                        numArray.push(element);
+                    }
+                }
+            }
+            return numArray;
+        }
+        
+    
+    }
+        
+
+    console.log(deleteInvalids([1 , null, undefined, 18, -19, NaN, "12", [1, 2], { ob: "lala" }]))
+    console.log(deleteInvalids(['1' , {num:2} , NaN ]))
+    console.log(deleteInvalids([ 1 , 2 , -3 ]))
+    console.log(deleteInvalids({num: [ 1 , 2 , 3 ]}))
+    console.log(deleteInvalids([ NaN, 1,12,0 ,-1 , undefined ]))
     
