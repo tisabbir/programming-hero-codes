@@ -88,7 +88,7 @@ function checkName(name) {
     // console.log(deleteInvalids([ NaN, 1,12,0 ,-1 , undefined ]))
     
 
-    // Problem three
+    // Problem Four
 
     function password(obj) {
         //write your code here
@@ -117,3 +117,38 @@ function checkName(name) {
     // console.log(password( { name: 'rahat' , birthYear: 2002, siteName: 'Facebook'} ))
     // console.log(password({ name: 'toky' , birthYear: 200, siteName: 'Facebook' } ))
     // console.log(password({ name: 'maisha', birthYear: 2002 }))
+
+
+    // Problem Five
+
+    function monthlySavings(arr , livingCost) {
+        // validation
+        let totalEarning = 0;
+        if(!Array.isArray(arr) || typeof livingCost !== 'number'){
+            return "invalid input"
+        } else{
+            for(let value of arr){
+                if(value>=3000){
+                    let tax = value * 20/100;
+                    let afterTaxEarning = value - tax;
+                    totalEarning = totalEarning + afterTaxEarning;
+                } else {
+                    totalEarning = totalEarning + value;
+                }
+            }
+            
+        }
+        let totalSavings = totalEarning - livingCost;
+        if(totalSavings>=0){
+            return totalSavings;
+        } else{
+            return "earn more";
+        }
+    
+    
+    }
+
+    console.log(monthlySavings([ 1000 , 2000 , 3000 ] , 5400))
+    console.log(monthlySavings([ 1000 , 2000 , 2500 ] , 5000))
+    console.log(monthlySavings([ 900 , 2700 , 3400] , 10000 ))
+    console.log(monthlySavings(100, [ 900 , 2700 , 3400]));
