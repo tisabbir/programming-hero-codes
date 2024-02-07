@@ -18,8 +18,42 @@ function calculateMoney(ticketSale) {
 }
 
 
-console.log(calculateMoney(10));
-console.log(calculateMoney(1055));
-console.log(calculateMoney(93));
-console.log(calculateMoney(-130));
+// console.log(calculateMoney(10));
+// console.log(calculateMoney(1055));
+// console.log(calculateMoney(93));
+// console.log(calculateMoney(-130));
+
+// Problem Two
+
+function checkName(name) {
+    // Validation
+    if(typeof name !== 'string'){
+        return "invalid";
+    } else{
+        let nameToLowerCase = name.toLowerCase();
+        let lastLetter = nameToLowerCase.length - 1;
+        
+        // condition
+        if(nameToLowerCase[lastLetter] === 'a' ||
+        nameToLowerCase[lastLetter] === 'y' ||
+        nameToLowerCase[lastLetter] === 'i' ||
+        nameToLowerCase[lastLetter] === 'e' ||
+        nameToLowerCase[lastLetter] === 'o' ||
+        nameToLowerCase[lastLetter] === 'u' ||
+        nameToLowerCase[lastLetter] === 'w' ){
+            return "Good Name";
+        } else{
+            return "Bad Name";
+        }
+    }
+
+   
+
+    }
+
+    console.log(checkName('Salman'));
+    console.log(checkName('RAFEE'));
+    console.log(checkName('Jhankar'));
+    console.log(checkName(199));
+    console.log(checkName(["Rashed"]));
     
