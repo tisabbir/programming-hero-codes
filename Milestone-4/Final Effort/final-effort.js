@@ -81,9 +81,39 @@ function checkName(name) {
     }
         
 
-    console.log(deleteInvalids([1 , null, undefined, 18, -19, NaN, "12", [1, 2], { ob: "lala" }]))
-    console.log(deleteInvalids(['1' , {num:2} , NaN ]))
-    console.log(deleteInvalids([ 1 , 2 , -3 ]))
-    console.log(deleteInvalids({num: [ 1 , 2 , 3 ]}))
-    console.log(deleteInvalids([ NaN, 1,12,0 ,-1 , undefined ]))
+    // console.log(deleteInvalids([1 , null, undefined, 18, -19, NaN, "12", [1, 2], { ob: "lala" }]))
+    // console.log(deleteInvalids(['1' , {num:2} , NaN ]))
+    // console.log(deleteInvalids([ 1 , 2 , -3 ]))
+    // console.log(deleteInvalids({num: [ 1 , 2 , 3 ]}))
+    // console.log(deleteInvalids([ NaN, 1,12,0 ,-1 , undefined ]))
     
+
+    // Problem three
+
+    function password(obj) {
+        //write your code here
+        // Validation 
+        if(!obj.name || !obj.siteName || !obj.birthYear){
+            return 'invalid';
+        } else if(obj.birthYear.toString().length !== 4){ return 'invalid';
+
+        } 
+        else{
+            let firstLetter = obj.siteName.charAt(0).toUpperCase();
+        let restLetter = obj.siteName.slice(1);
+        let finalSiteName = firstLetter + restLetter;
+        let finalPassword = finalSiteName + '#' + obj.name + '@' + obj.birthYear;
+        return finalPassword;
+        }
+
+        
+    }
+
+    // console.log(password({
+    //     name : 'kolimuddin', 
+    //     birthYear : 1999 , 
+    //     siteName : 'google'
+    // })) 
+    // console.log(password( { name: 'rahat' , birthYear: 2002, siteName: 'Facebook'} ))
+    // console.log(password({ name: 'toky' , birthYear: 200, siteName: 'Facebook' } ))
+    // console.log(password({ name: 'maisha', birthYear: 2002 }))
