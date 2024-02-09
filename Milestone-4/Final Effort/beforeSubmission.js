@@ -1,4 +1,3 @@
-// Problem One
 
 function calculateMoney(ticketSale) {
     if(ticketSale<0){
@@ -17,12 +16,6 @@ function calculateMoney(ticketSale) {
 }
 
 
-// console.log(calculateMoney(10));
-// console.log(calculateMoney(1055));
-// console.log(calculateMoney(93));
-// console.log(calculateMoney(-130));
-
-// Problem Two
 
 function checkName(name) {
     // Validation
@@ -50,14 +43,10 @@ function checkName(name) {
 
     }
 
-    // console.log(checkName('Salman'));
-    // console.log(checkName('RAFEE'));
-    // console.log(checkName('Jhankar'));
-    // console.log(checkName(199));
-    // console.log(checkName(["Rashed"]));
 
 
-    // Problem Three
+
+
     function deleteInvalids(array) {
         let numArray = [];
         // validation 
@@ -80,14 +69,7 @@ function checkName(name) {
     }
         
 
-    // console.log(deleteInvalids([1 , null, undefined, 18, -19, NaN, "12", [1, 2], { ob: "lala" }]))
-    // console.log(deleteInvalids(['1' , {num:2} , NaN ]))
-    // console.log(deleteInvalids([ 1 , 2 , -3 ]))
-    // console.log(deleteInvalids({num: [ 1 , 2 , 3 ]}))
-    // console.log(deleteInvalids([ NaN, 1,12,0 ,-1 , undefined ]))
-    
 
-    // Problem Four
 
     function password(obj) {
 
@@ -108,17 +90,6 @@ function checkName(name) {
         
     }
 
-    // console.log(password({
-    //     name : 'kolimuddin', 
-    //     birthYear : 1999 , 
-    //     siteName : 'google'
-    // })) 
-    // console.log(password( { name: 'rahat' , birthYear: 2002, siteName: 'Facebook'} ))
-    // console.log(password({ name: 'toky' , birthYear: 200, siteName: 'Facebook' } ))
-    // console.log(password({ name: 'maisha', birthYear: 2002 }))
-
-
-    // Problem Five
 
     function monthlySavings(arr , livingCost) {
         // validation
@@ -146,8 +117,3 @@ function checkName(name) {
     
     
     }
-
-    // console.log(monthlySavings([ 1000 , 2000 , 3000 ] , 5400))
-    // console.log(monthlySavings([ 1000 , 2000 , 2500 ] , 5000))
-    // console.log(monthlySavings([ 900 , 2700 , 3400] , 10000 ))
-    // console.log(monthlySavings(100, [ 900 , 2700 , 3400]));
