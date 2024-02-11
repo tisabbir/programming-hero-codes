@@ -6,6 +6,15 @@
     <title>Welcome to Event Listener</title>
 </head>
 <body>
-    <h1>DOM er ajke special Event</h1>
+    <h1 onmousemove="console.log('mouse uthai dilo')">DOM er ajke special Event</h1>
+    <button onclick="console.log('Click kore dilo')">Click Me</button>
+    <button onclick="console.log('Amakeo Click kore dilo')">Another Click Me</button>
+
+
+    <button onclick="document.body.style.backgroundColor = 'Yellow'">Make Yellow</button>
+    <button id="make-blue">Make Blue</button>
+    <button onclick="makeRed()">Make Red</button>
+    <button id="purple">Make Purple</button>
+    <script src="js/js-event.js"></script>
 </body>
 </html>
