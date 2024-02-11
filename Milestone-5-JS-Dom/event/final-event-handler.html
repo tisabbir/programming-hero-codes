@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Event Handler</title>
+</head>
+<body>
+
+    <h1 id="text">Final event listener file</h1>
+    <button onclick="reset()">Reset</button>
+    <button onclick="changeText()">Handle event by function</button>
+
+    <button id="button">Handle event by id and add event listener</button>
+
+    <!-- Update portion -->
+    <h6 style="font-size: x-large;" id="input-text">This is input text</h6>
+    <input id="input-value" type="text"> 
+    <button id="update">Update</button>
+
+    <script>
+        function changeText(){
+            document.getElementById('text').innerText = 'Text Changed by function'
+        }
+
+        document.getElementById('button').addEventListener('click', function(){
+            document.getElementById('text').innerText = 'Event Handled by addEventListener'
+        })
+
+        // reset
+        function reset(){
+            document.getElementById('text').innerText = 'Final event listener file';
+        }
+
+        // update 
+        document.getElementById('update').addEventListener('click', function(){
+            let inputField = document.getElementById('input-value');
+           let  inputValue = inputField.value;
+           document.getElementById('input-text').innerText = inputValue;
+           
+           inputField.value = '';
+        })
+        
+    </script>
+</body>
+</html>
