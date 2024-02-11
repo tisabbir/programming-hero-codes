@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment HTML </title>
+</head>
+<body>
+    <h1>This is the Comment list</h1>
+    <div id="div">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat temporibus, aut ex ipsa recusandae reiciendis, reprehenderit rerum sunt eveniet doloremque voluptatibus quasi magni deserunt vel ea explicabo, aliquid voluptatem illum autem soluta a. Eius, quidem laborum? Iste ex, delectus voluptate, veniam quia praesentium ab temporibus tempore suscipit autem hic veritatis.</p>
+    <p>Culpa doloribus enim unde distinctio odio quam facilis obcaecati dolor corporis deserunt iure temporibus eligendi iusto veritatis accusamus, perspiciatis mollitia atque porro dolorem, molestias beatae. Consequuntur sequi deleniti debitis iure quas eaque consequatur, laborum pariatur tempore cupiditate, ea in ducimus culpa natus id nulla amet repellendus. Quo enim sint dolorem?</p>
+    <p>Voluptatum totam eos, eaque esse sit rerum deleniti ea obcaecati, et debitis repellat, aperiam delectus inventore nemo rem asperiores tempore? Nostrum nam ab eius, numquam dolorem, tenetur quidem esse ratione magnam fuga in libero odio quod cumque odit iste ad aut veritatis aperiam omnis. Consequuntur harum perferendis autem nostrum vitae.</p>
+    </div>
+
+
+    <textarea name="" id="txt" cols="60" rows="10"></textarea>
+    <button id="btn">post</button>
+
+
+    <script>
+        // 1. Click on the button
+        const btnPost = document.getElementById('btn');
+        // console.log(btnPost)
+        btnPost.addEventListener('click' , function(){
+            const txtarea = document.getElementById('txt');
+            const txtValue = txtarea.value;
+            // console.log(txtValue); 
+
+
+            // 3. add the value to the comment list 
+            const div = document.getElementById('div')
+            const p = document.createElement('p');
+            p.innerHTML = txtValue;
+            div.append(p);
+
+            // 4. Clear Text Area
+            txtarea.value = '';
+        })
+
+
+    </script>
+</body>
+</html>
