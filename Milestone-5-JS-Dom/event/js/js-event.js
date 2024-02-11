@@ -24,3 +24,19 @@ const purpleMaker = document.getElementById('purple');
 purpleMaker.onclick = function makePurple(){
     document.body.style.backgroundColor = 'purple';
 }
+
+// option four
+const pinkMaker = document.getElementById('make-pink');
+        pinkMaker.addEventListener('click', makePink);
+        function makePink() {
+            document.body.style.backgroundColor = 'pink';
+        }
+
+// Option four  Another 
+const greenMaker = document.getElementById('green-button');
+        greenMaker.addEventListener('click', function(){
+            document.body.style.backgroundColor = 'green';
+        })
+
+
+// Final Option four
