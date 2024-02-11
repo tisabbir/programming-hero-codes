@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Events</title>
+</head>
+<body>
+    <h1>Explore more event Handler</h1>
+    <textarea name="" id="txt" cols="30" rows="10"></textarea>
+    <button id="btn-more">I am a button</button>
+    <script>
+        document.getElementById('btn-more').addEventListener('click', function(){
+            console.log("Event got triggered");
+        })
+
+        document.getElementById('txt').addEventListener('focus',function(){
+            document.body.style.backgroundColor = 'tomato'
+        })
+        document.getElementById('txt').addEventListener('blur',function(){
+            document.body.style.backgroundColor = 'pink'
+        })
+        document.getElementById('txt').addEventListener('keypress',function(event){
+            console.log(event.target.value)
+        })
+    </script>
+</body>
+</html>
