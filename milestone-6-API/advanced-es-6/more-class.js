@@ -1,4 +1,4 @@
-class vehicle{
+class Vehicle{
     constructor(name, price){
         this.name = name;
         this.price = price;
@@ -8,7 +8,7 @@ class vehicle{
     }
 }
 
-class Bus extends vehicle{
+class Bus extends Vehicle{
     constructor(name, price,seat, ticketPrice){
         super(name, price);
         this.seat = seat;
@@ -23,3 +23,19 @@ console.log(hanif);
 
 hanif.end();
 hanif.start();
+
+
+class Truck extends Vehicle{
+    constructor(name, price, load){
+        super(name,price);
+        this.load = load;
+    }
+
+    loader(){
+        console.log('Gari load hoye gece');
+    }
+}
+
+
+const A4truck = new Truck('A4Truck', 155550, '5TN');
+A4truck.loader();
