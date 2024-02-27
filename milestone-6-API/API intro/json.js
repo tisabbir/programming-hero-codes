@@ -12,3 +12,39 @@ const shop = {
     isOpen : false,
 
 }
+
+console.log(shop); 
+/*
+{
+  name: 'eStall',
+  owner: [ 'TI Sabbir', 'Mahdi', 'Hasib' ],
+  shopServices: {
+    platform: [ 'iOs', 'android', 'windows' ],
+    howOperate: [Function: operation]
+  },
+  isProfitable: true,
+  monthlyRevenue: 4500000000,
+  isOpen: false
+}
+*/
+
+const shopJSON = JSON.stringify(shop);
+console.log(shopJSON);
+
+/**
+ * {"name":"eStall","owner":["TI Sabbir","Mahdi","Hasib"],"shopServices":{"platform":["iOs","android","windows"]},"isProfitable":true,"monthlyRevenue":4500000000,"isOpen":false}
+ */
+
+const shopJSONtoObj = JSON.parse(shopJSON);
+console.log(shopJSONtoObj);
+
+/**
+ * {
+  name: 'eStall',
+  owner: [ 'TI Sabbir', 'Mahdi', 'Hasib' ],
+  shopServices: { platform: [ 'iOs', 'android', 'windows' ] },
+  isProfitable: true,
+  monthlyRevenue: 4500000000,
+  isOpen: false
+}
+ */
