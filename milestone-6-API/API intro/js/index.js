@@ -10,7 +10,12 @@ function loadUsers2(){
 
 function displayUser(json){
     const ul = document.getElementById('item-list');
-    const li = document.createElement('li');
-    li.innerText = user.name;
-    ul.appendChild(li);
+    for(let user of json){
+        let list = document.createElement('li');
+    list.innerText = user.name;
+    ul.appendChild(list);
+    
+    }
+
+    
 }
