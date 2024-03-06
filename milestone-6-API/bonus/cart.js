@@ -13,12 +13,12 @@ const addProduct = () => {
 
      const productContainer = document.getElementById('productContainer');
 
-const displayProducts = () => {
-    const li = document.createElement('li');
-    li.innerText = product + ' '  + quantity;
-
-    productContainer.appendChild(li);
-}
+     const displayProducts = () => {
+          const li = document.createElement('li');
+          li.innerText = product + ' '  + quantity;
+      
+          productContainer.appendChild(li);
+      }
      displayProducts()
 }
 
