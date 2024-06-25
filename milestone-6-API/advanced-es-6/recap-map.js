@@ -12,7 +12,7 @@ console.log(double); //[ 2, 4, 6, 8 ]
  */
 
 
-// const triple = num => num * 3;
+const triple = num => num * 3;
 
 // const tripledArr = mapAlt(triple);
-// console.log(tripledArr); //[ 3, 6, 9, 12 ]
+console.log(tripledArr); //[ 3, 6, 9, 12 ]
