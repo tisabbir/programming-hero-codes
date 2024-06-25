@@ -11,16 +11,8 @@ console.log(double); //[ 2, 4, 6, 8 ]
  * 5.Return new array
  */
 
-function mapAlt(callback){
-    const newEmptyArr = [];
-    for(let element of originalArr){
-       const result = callback(element);
-       newEmptyArr.push(result);
-    }
-    return newEmptyArr;
-}
 
-const triple = num => num * 3;
+// const triple = num => num * 3;
 
-const tripledArr = mapAlt(triple);
-console.log(tripledArr); //[ 3, 6, 9, 12 ]
+// const tripledArr = mapAlt(triple);
+// console.log(tripledArr); //[ 3, 6, 9, 12 ]
